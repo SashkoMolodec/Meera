@@ -16,7 +16,7 @@ In this manual, we will set it up automatically. Go into your terminal and excec
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
 ```
 
-Then, we will need to install Electron & Node JS to make everything work fine. You need to run this commands in your terminal one by one:
+Then, we'll need to install Electron & Node JS to make everything work fine. You need to run this commands in your terminal one by one:
 ```
 cd /tmp
 wget https://nodejs.org/dist/v8.2.1/node-v8.2.1-linux-armv7l.tar.xz
@@ -33,13 +33,42 @@ DISPLAY=:0 npm start
 If you have some problems with installing or running it, find your issue [here](https://github.com/MichMich/MagicMirror/issues).
 
 ### 2. Modules
-We can install them both manually or automatically (WARNING! Automatic way is experimental function, still working on it). 
-#### Auto:
+Now, we'll install our modules and dependencies: 
 1) Open your file explorer and go to the MagicMirror folder
 2) Delete modules folder
 3) Open terminal, go to the MagicMirror folder and git clone this repo.
 ```
-git clone 
+cd MagicMirror
+git clone https://github.com/SashkoMolodec/Meera.git
+```
+After it, we'll need to install some dependencies for our modules (be very patient and carefully, even one missed command will make you do everything again from the start):
+```
+cd modules/MMM-Trello
+npm install
+cd ..
+cd MMM-GoogleMapsTraffic
+npm install
+cd ..
+cd MMM-soccer
+npm i --production
+cd ..
+cd MMM-NowPlayingOnSpotify
+npm install
+cd .. 
+cd internet-monitor
+npm install
+cd ..
+cd email
+npm install
+cd ..
+cd MMM-Screencast
+npm install
+cd ..
+cd MMM-voice/installers
+bash dependencies.sh
+cd /
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+sudo ldconfig
 ```
 
 
