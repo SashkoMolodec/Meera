@@ -236,7 +236,7 @@ Voice Recognition Module for MagicMirror² that works offline (**113 line**).
     position: 'bottom_bar',
     	config: {
        		microphone: 1
-				}
+		}
 },
 ```
 You can read about usage and config tools [here](https://github.com/fewieden/MMM-voice#config-options).
