@@ -84,10 +84,10 @@ sudo ldconfig
 ```
 Good job! Now, we'll configure them.
 
-### 2. Configuring Modules
+### 3. Configuring Modules
 We have come to the most interesting part of the installation. This part is the most difficult and time-spending. Just get your strength and patience, and let's begin!
 First, we need to open our config file and get acquainted with it. Open your file explorer, go to **MagicMirror/config/** and open **config.js**.
-#### 2.1. [Remote Control](https://github.com/Jopyth/MMM-Remote-Control)
+#### 3.1. [Remote Control](https://github.com/Jopyth/MMM-Remote-Control)
 This module allows you to control Meera with smartphone, or any device with installed browser.
 * First, you should find out the IP-address of the device from which you will control the mirror and add it to your `ipWhitelist` array (**18 line**):
 ```javascript
@@ -107,7 +107,7 @@ var config = {
 ```
 * Then, access the remote interface on http://192.168.xxx.xxx:8080/remote.html (replace with IP address of your RaspberryPi).
 [Here](https://github.com/Jopyth/MMM-Remote-Control#call-methods-from-other-modules) is the manual how to **call methods from other modules**.
-#### 2.2. [MMMages](https://github.com/edward-shen/MMM-pages)
+#### 3.2. [MMMages](https://github.com/edward-shen/MMM-pages)
 This module allows you to have pages in Meera. All installed modules are on certain pages, so here we can replace them (**32-36 line**):
 ```javascript
 {
@@ -122,7 +122,7 @@ This module allows you to have pages in Meera. All installed modules are on cert
     		},
 ```
 You can read about using this module and configuration options [here](https://github.com/edward-shen/MMM-pages#using-the-module).
-#### 2.3. [Clock](https://github.com/MichMich/MagicMirror/tree/master/modules/default/clock)
+#### 3.3. [Clock](https://github.com/MichMich/MagicMirror/tree/master/modules/default/clock)
 The `clock` module is one of the default modules of the MagicMirror. This module displays the current date and time. The information will be updated realtime (**47 line**).
 ```javascript
 		{
@@ -130,7 +130,7 @@ The `clock` module is one of the default modules of the MagicMirror. This module
 			position: "top_left"
 		},
 ```
-#### 2.4. [Calendar](https://github.com/MichMich/MagicMirror/tree/master/modules/default/calendar)
+#### 3.4. [Calendar](https://github.com/MichMich/MagicMirror/tree/master/modules/default/calendar)
 The `calendar` module is one of the default modules of the MagicMirror. This module displays events from a public .ical calendar. It can combine multiple calendars (**51 line**).
 ```javascript
 {
@@ -160,7 +160,7 @@ The `calendar` module is one of the default modules of the MagicMirror. This mod
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/MichMich/MagicMirror/tree/master/modules/default/calendar#using-the-module).
-#### 2.5. [Compliments](https://github.com/MichMich/MagicMirror/tree/master/modules/default/compliments)
+#### 3.5. [Compliments](https://github.com/MichMich/MagicMirror/tree/master/modules/default/compliments)
 The `compliments` module is one of the default modules of the MagicMirror. This module displays a random compliment (**76 line**).
 ```javascript
 {
@@ -169,7 +169,7 @@ The `compliments` module is one of the default modules of the MagicMirror. This 
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/MichMich/MagicMirror/tree/master/modules/default/compliments#using-the-module).
-#### 2.6. [Current Weather](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/currentweather)
+#### 3.6. [Current Weather](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/currentweather)
 The `currentweather` module is one of the default modules of the MagicMirror. This module displays the current weather, including the windspeed, the sunset or sunrise time, the temperature and an icon to display the current conditions (**80 line**).
 ```javascript
 {
@@ -185,7 +185,7 @@ The `currentweather` module is one of the default modules of the MagicMirror. Th
 }
 ```
 You can read about using this module and configuration options [here](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/currentweather#using-the-module).
-#### 2.7. [Weather Forecast](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/weatherforecast)
+#### 3.7. [Weather Forecast](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/weatherforecast)
 The `weatherforecast` module is one of the default modules of the MagicMirror. This module displays the weather forecast for the coming week, including an an icon to display the current conditions, the minimum temperature and the maximum temperature (**89 line**).
 ```javascript
 {
@@ -201,7 +201,7 @@ The `weatherforecast` module is one of the default modules of the MagicMirror. T
 }
 ```
 You can read about using this module and configuration options [here](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/weatherforecast#using-the-module).
-#### 2.8. [News Feed](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/newsfeed)
+#### 3.8. [News Feed](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/newsfeed)
 The `newsfeed` module is one of the default modules of the MagicMirror. This module displays news headlines based on an RSS feed. Scrolling through news headlines happens time-based (updateInterval), but can also be controlled by sending news feed specific notifications to the module (**99 line**).
 ```javascript
 {
@@ -225,7 +225,7 @@ The `newsfeed` module is one of the default modules of the MagicMirror. This mod
 }
 ```
 You can read about using this module and configuration options [here](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/newsfeed#using-the-module).
-#### 2.9. [Voice Helper](https://github.com/fewieden/MMM-voice)
+#### 3.9. [Voice Helper](https://github.com/fewieden/MMM-voice)
 Voice Recognition Module for MagicMirror² that works offline (**113 line**).
 ```javascript
 {
@@ -237,7 +237,7 @@ Voice Recognition Module for MagicMirror² that works offline (**113 line**).
 },
 ```
 You can read about usage and config tools [here](https://github.com/fewieden/MMM-voice#config-options).
-#### 2.10. [Monthly Calendar](https://github.com/KirAsh4/calendar_monthly/)
+#### 3.10. [Monthly Calendar](https://github.com/KirAsh4/calendar_monthly/)
 The `calendar_monthly` module is a simple month-view calendar (**123 line**).
 ```javascript
 {
@@ -246,7 +246,7 @@ The `calendar_monthly` module is a simple month-view calendar (**123 line**).
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/KirAsh4/calendar_monthly/#using-the-module).
-#### 2.11. [Page Indicator](https://github.com/edward-shen/MMM-page-indicator)
+#### 3.11. [Page Indicator](https://github.com/edward-shen/MMM-page-indicator)
 MagicMirror² module to display what page you're on (**127 line**).
 ```javascript
 {
@@ -258,7 +258,7 @@ MagicMirror² module to display what page you're on (**127 line**).
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/edward-shen/MMM-page-indicator#using-the-module).
-#### 2.12. [Trello Checklist](https://github.com/Jopyth/MMM-Trello)
+#### 3.12. [Trello Checklist](https://github.com/Jopyth/MMM-Trello)
 The `Trello` module displays all cards in a specific [Trello](https://trello.com/) list, in a style similar to the Newsfeed (showing one card at a time). Applications can be: displaying a TODO list, showing notes, or important information which needs to be shared between roommates (**line 134**).
 ```javascript
     	{
@@ -273,7 +273,7 @@ The `Trello` module displays all cards in a specific [Trello](https://trello.com
     	},
 ```
 You can read about using this module and configuration options [here](https://github.com/Jopyth/MMM-Trello#using-the-module).
-#### 2.13. [Events in your City](https://github.com/mykle1/MMM-Events)
+#### 3.13. [Events in your City](https://github.com/mykle1/MMM-Events)
 * Rotation of upcoming events for your city.
 * Never miss a show because you didn't know about it!
 * Concerts and Tour Dates, Performing Arts, Art Galleries & Exhibits, Comedy Shows, Food and Drink, Sports, and more (**148 line**).
@@ -296,7 +296,7 @@ You can read about using this module and configuration options [here](https://gi
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/mykle1/MMM-Events#configjs-entry-and-options).
-#### 2.14. [Google Fit](https://github.com/amcolash/MMM-GoogleFit)
+#### 3.14. [Google Fit](https://github.com/amcolash/MMM-GoogleFit)
 A module to grab google fit daily step count and daily weights (**165 line**).
 ```javascript
 {
@@ -308,7 +308,7 @@ A module to grab google fit daily step count and daily weights (**165 line**).
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/amcolash/MMM-GoogleFit#configuration-options).
-#### 2.15. [Soccer](https://github.com/fewieden/MMM-soccer)
+#### 3.15. [Soccer](https://github.com/fewieden/MMM-soccer)
 European Soccer Standings Module for MagicMirror² (**172 line**).
 ```javascript
 {
@@ -326,7 +326,7 @@ European Soccer Standings Module for MagicMirror² (**172 line**).
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/fewieden/MMM-soccer#config-options).
-#### 2.16. [Cryptocurrency](https://github.com/matteodanelli/MMM-cryptocurrency)
+#### 3.16. [Cryptocurrency](https://github.com/matteodanelli/MMM-cryptocurrency)
 A MagicMirror module used to get real-time values of crypto currencies (**185 line**).
 ```javascript
 {
@@ -343,7 +343,7 @@ A MagicMirror module used to get real-time values of crypto currencies (**185 li
 }
 ```
 You can read about using this module and configuration options [here](https://github.com/matteodanelli/MMM-cryptocurrency#config).
-#### 2.17. [Currency Exchange](https://github.com/mykle1/MMM-LICE)
+#### 3.17. [Currency Exchange](https://github.com/mykle1/MMM-LICE)
 Real-time exchange rate for 168 World Currencies & PRECIOUS METALS (**line 197**).
 ```javascript
 {
@@ -360,7 +360,7 @@ Real-time exchange rate for 168 World Currencies & PRECIOUS METALS (**line 197**
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/mykle1/MMM-LICE#configjs-entry-and-options).
-#### 2.18. [Internet Speed Monitor](https://github.com/ronny3050/internet-monitor)
+#### 3.18. [Internet Speed Monitor](https://github.com/ronny3050/internet-monitor)
 Monitors internet statistics such as strength and speed information on a smart mirror (**line 209**).
 ```javascript
 {
@@ -387,7 +387,7 @@ Monitors internet statistics such as strength and speed information on a smart m
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/ronny3050/internet-monitor#using-the-module).
-#### 2.19. [NowPlayingOnSpotify](https://github.com/raywo/MMM-NowPlayingOnSpotify)
+#### 3.19. [NowPlayingOnSpotify](https://github.com/raywo/MMM-NowPlayingOnSpotify)
 A module for the MagicMirror project by Michael Teeuw displaying the song currently playing on Spotify (**231 line**).
 ```javascript
 {
@@ -404,7 +404,7 @@ A module for the MagicMirror project by Michael Teeuw displaying the song curren
 }
 ```
 You can read about using this module and configuration options [here](https://github.com/raywo/MMM-NowPlayingOnSpotify#step-2--create-and-authorise-a-spotify-app).
-#### 2.20. [GoogleMaps Traffic](https://github.com/vicmora/MMM-GoogleMapsTraffic)
+#### 3.20. [GoogleMaps Traffic](https://github.com/vicmora/MMM-GoogleMapsTraffic)
 A module for the MagicMirror² that displays a map, centered at provided coordinates, with Google Maps Traffic information (**243 line**).
 ```javascript
 {
@@ -430,7 +430,7 @@ A module for the MagicMirror² that displays a map, centered at provided coordin
         }
 ```
 You can read about using this module and configuration options [here](https://github.com/vicmora/MMM-GoogleMapsTraffic#using-the-module).
-#### 2.21. [Local Transport](https://github.com/CFenner/MMM-LocalTransport) 
+#### 3.21. [Local Transport](https://github.com/CFenner/MMM-LocalTransport) 
 This module display the next local transport connection between an origin and destination (**264 line**).
 ```javascript
 {
@@ -444,7 +444,7 @@ This module display the next local transport connection between an origin and de
 },
 ```
 You can read about using this module and configuration options [here](https://github.com/CFenner/MMM-LocalTransport#configuration).
-#### 2.22. [Screencast](https://github.com/kevinatown/MMM-Screencast)
+#### 3.22. [Screencast](https://github.com/kevinatown/MMM-Screencast)
 A module to cast to the MagicMirror². Currently, only YouTube casting is supported (**279 line**).
 ```javascript
 {
@@ -458,7 +458,7 @@ A module to cast to the MagicMirror². Currently, only YouTube casting is suppor
  },
 ```
 You can read about using this module and configuration options [here](https://github.com/kevinatown/MMM-Screencast#using-the-module).
-#### 2.23. [Email](https://github.com/ronny3050/email-mirror)
+#### 3.23. [Email](https://github.com/ronny3050/email-mirror)
 This module displays emails on Mirror and listens for new incoming emails. When a new email is received, the mirror is updated to display it (**288 line**).
 ```javascript
 {
