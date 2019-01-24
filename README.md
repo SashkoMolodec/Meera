@@ -9,7 +9,7 @@
 
 So basically you need to complete all the next steps, and you'll be good!
 
-### 1. MagicMirror²
+### 1. Installing MagicMirror²
 First, we need to install basic version of a [MagicMirror²](https://github.com/MichMich/MagicMirror) (automatic or manual installation).
 In this manual, we will set it up automatically. Go into your terminal and excecute the following command on your Raspberry Pi:
 ```
@@ -44,7 +44,7 @@ Then enter `CTRL+X`, press Y and Enter. And then reboot your system to see the c
 
 If you have some problems with installing or running it, find your issue [here](https://github.com/MichMich/MagicMirror/issues).
 
-### 2. Modules
+### 2. Cloning Modules & Installing Dependencies
 Now, we'll install our modules and dependencies: 
 * (1) Open your file explorer and go to the MagicMirror folder
 * (2) Delete modules folder
