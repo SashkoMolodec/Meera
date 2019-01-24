@@ -7,7 +7,7 @@
 * USB keyboard with mouse
 * Microphone and speakers with USB output (or via USB Sound Card, for [example](https://www.amazon.com/Channel-External-Sound-Adapter-Laptop/dp/B01LQENV8G))
 
-So basically you need to complete all the next steps, and you will be good!
+So basically you need to complete all the next steps, and you'll be good!
 
 ### 1. MagicMirror²
 First, we need to install basic version of a [MagicMirror²](https://github.com/MichMich/MagicMirror) (automatic or manual installation).
