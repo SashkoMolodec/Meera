@@ -127,7 +127,8 @@ This module allows you to have pages in Meera. All installed modules are on cert
 You can read about using this module and configuration options [here](https://github.com/edward-shen/MMM-pages#using-the-module).
 #### 3.3. [Clock](https://github.com/MichMich/MagicMirror/tree/master/modules/default/clock)
 The `clock` module is one of the default modules of the MagicMirror. This module displays the current date and time. The information will be updated realtime (**47 line**).
-<img src="https://github.com/SashkoMolodec/Meera/blob/master/Module_images/clock.png" title="Meera" alt="Clock">
+---
+<img src="https://github.com/SashkoMolodec/Meera/blob/master/Module_images/clock.png" title="clock" alt="clock">
 ```javascript
 		{
 			module: "clock",
