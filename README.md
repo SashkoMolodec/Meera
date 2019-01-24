@@ -7,6 +7,8 @@
 * USB keyboard with mouse
 * Microphone and speakers with USB output (or via USB Sound Card, for [example](https://www.amazon.com/Channel-External-Sound-Adapter-Laptop/dp/B01LQENV8G))
 
+So basically you need to complete all the next steps, and you will be good!
+
 ### 1. MagicMirror²
 First, we need to install basic version of a [MagicMirror²](https://github.com/MichMich/MagicMirror) (automatic or manual installation).
 In this manual, we will set it up automatically. Go into your terminal and excecute the following command on your Raspberry Pi:
@@ -26,7 +28,22 @@ sudo npm install -g electron --unsafe-perm=true --allow-root
 Now, let's try to run our MagicMirror. Open terminal and run these comands:
 ```
 cd MagicMirror
-npm start
+DISPLAY=:0 npm start
+```
+If you have some problems with installing or running it, find your issue [here](https://github.com/MichMich/MagicMirror/issues).
+
+### 2. Modules
+We can install them both manually or automatically (WARNING! Automatic way is experimental function, still working on it). 
+#### Auto:
+1) Open your file explorer and go to the MagicMirror folder
+2) Delete modules folder
+3) Open terminal, go to the MagicMirror folder and git clone this repo.
+```
+git clone 
 ```
 
-If you have some problems with installing or running, find your issue [here](https://github.com/MichMich/MagicMirror/issues).
+
+
+
+
+
