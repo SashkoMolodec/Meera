@@ -107,9 +107,9 @@ var config = {
 ```
 * Then, access the remote interface on http://192.168.xxx.xxx:8080/remote.html (replace with IP address of your RaspberryPi).
 [Here](https://github.com/Jopyth/MMM-Remote-Control#call-methods-from-other-modules) is the manual how to **call methods from other modules**.
-* If you want to travel between pages, you'll need to send notifications to Meera, such as `PAGE_INCREMENT` and `PAGE_DECREMENT`. Here's example:
-`http://192.168.xxx.xxx:8080/remote.html?action=NOTIFICATION&notification=PAGE_INCREMENT` (replace with IP address of your RaspberryPi)
-`http://192.168.xxx.xxx:8080/remote.html?action=NOTIFICATION&notification=PAGE_DECREMENT`.
+* If you want to travel between pages, you'll need to send notifications to Meera, such as `PAGE_INCREMENT` and `PAGE_DECREMENT`.
+Here's example:
+`http://192.168.xxx.xxx:8080/remote.html?action=NOTIFICATION&notification=PAGE_INCREMENT` (replace with IP address of your RaspberryPi).
 #### 3.2. [Pages](https://github.com/edward-shen/MMM-pages)
 This module allows you to have pages in Meera. All installed modules are on certain pages, so here we can replace them (**30 line**):
 ```javascript
