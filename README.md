@@ -1,5 +1,5 @@
 # Meera
-[MagicMirror²](https://magicmirror.builders/) Build with integrated Google Assistant and package of useful modules.
+[MagicMirror²](https://magicmirror.builders/) build with integrated Google and Meera Assistant with installed package of useful modules.
 
 ## Required Components
 * [Raspberry Pi](https://www.raspberrypi.org/) 2 or above with pre-installed [Raspbian OS](https://www.raspberrypi.org/downloads/)
