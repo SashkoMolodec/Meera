@@ -263,7 +263,7 @@ defaults.ctl.card 0
 defaults.pcm.card 0
 ```
 * Change both of them from 0 to 1, then enter `CTRL+X`, press Y and Enter
-* Try to test your microphone [here](https://www.onlinemictest.com/), and for speaker you can run any [youtube](https://www.youtube.com/) video or music from your Chromium browser.
+* Try to test your microphone [here](https://www.onlinemictest.com/), and for speaker you can run any [youtube](https://www.youtube.com/) video or music from your Chromium browser.  
 You can read more about usage and config tools [here](https://github.com/fewieden/MMM-voice#config-options).
 #### 3.10. [Monthly Calendar](https://github.com/KirAsh4/calendar_monthly/)
 The `calendar_monthly` module is a simple month-view calendar (**123 line**).  
