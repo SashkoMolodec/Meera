@@ -138,7 +138,7 @@ The `clock` module is one of the default modules of the MagicMirror. This module
 #### 3.4. [Calendar](https://github.com/MichMich/MagicMirror/tree/master/modules/default/calendar)
 The `calendar` module is one of the default modules of the MagicMirror. This module displays events from a public .ical calendar. It can combine multiple calendars (**51 line**).  
   
-<a><img src="https://github.com/SashkoMolodec/Meera/blob/master/Module_images/holidays_calendar.png" title="calendar" alt="calendar"</a>
+<a><img src="https://github.com/SashkoMolodec/Meera/blob/master/Module_images/holidays_calendar.png" title="calendar" alt="calendar"></a>
 ```javascript
 {
 	module: "calendar",
