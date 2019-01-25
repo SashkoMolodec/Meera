@@ -1,0 +1,34 @@
+@-webkit-keyframes MMM-voice-pulse {
+    0% { color: #999; }
+    50% { color: #000; }
+    100% { color: #999; }
+}
+
+.MMM-voice .pulse {
+    -webkit-animation: MMM-voice-pulse 1s infinite;
+    animation: MMM-voice-pulse 1s infinite;
+}
+
+.MMM-voice .icon {
+    margin-right: 5px;
+}
+
+.MMM-voice-blur {
+    -webkit-filter: blur(2px) brightness(50%);
+    filter: blur(2px) brightness(50%);
+}
+
+.MMM-voice .modal {
+    position: fixed;
+    text-align: left;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.MMM-voice .modal ul {
+    margin: 0;
+}
