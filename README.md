@@ -252,7 +252,18 @@ Voice Recognition Module for MagicMirror² that works offline (**113 line**).
 		}
 },
 ```
-You can read about usage and config tools [here](https://github.com/fewieden/MMM-voice#config-options).
+* First, we need to activate our microphone and speakers. Open terminal and run these command: 
+```
+sudo nano /usr/share/alsa/alsa.conf
+```
+You need to look for the following two lines:
+```
+defaults.ctl.card 0
+defaults.pcm.card 0
+```
+* Change both of them from 0 to 1, then enter `CTRL+X`, press Y and Enter
+* Try to test your microphone [here](https://www.onlinemictest.com/), and for speaker you can run any [youtube](https://www.youtube.com/) video or music from your Chromium browser.
+You can read more about usage and config tools [here](https://github.com/fewieden/MMM-voice#config-options).
 #### 3.10. [Monthly Calendar](https://github.com/KirAsh4/calendar_monthly/)
 The `calendar_monthly` module is a simple month-view calendar (**123 line**).  
   
@@ -527,6 +538,17 @@ This module displays emails on Mirror and listens for new incoming emails. When 
 }
 ```
 You can read about using this module and configuration options [here](https://github.com/ronny3050/email-mirror#configuration-options).
+#### 3.24. [Google Assistant](https://assistant.google.com/)
+For the end, we need to install Google Assistnt - our last module. You need to go [here](https://pimylifeup.com/raspberry-pi-google-assistant/), and do the all steps.  
+After it, you can set it to boot automatically.  
+* Open terminal, go to your MagicMirror folder and open file `run-start.sh` :
+```
+cd MagicMirror
+sudo nano run-start.sh
+```
+* Add `source env/bin/activate` line at the end of your `sh` file
+* Enter `CTRL+X`, press Y and Enter. Done!
+
 ## Contributing Guidelines
 Contributions of all kinds are welcome, not only in the form of code but also with regards bug reports and documentation.
 Please keep the following in mind:
