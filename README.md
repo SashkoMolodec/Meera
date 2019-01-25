@@ -540,7 +540,7 @@ This module displays emails on Mirror and listens for new incoming emails. When 
 ```
 You can read about using this module and configuration options [here](https://github.com/ronny3050/email-mirror#configuration-options).
 #### 3.24. [Google Assistant](https://assistant.google.com/)
-For the end, we need to install Google Assistnt - our last module. You need to go [here](https://pimylifeup.com/raspberry-pi-google-assistant/), and do the all steps.  
+For the end, we need to install Google Assistant - our last module. You need to go [here](https://pimylifeup.com/raspberry-pi-google-assistant/) and do the all steps.  
 After it, you can set it to boot automatically.  
 * Open terminal, go to your MagicMirror folder and open file `run-start.sh` :
 ```
