@@ -47,15 +47,17 @@ If you have some problems with installing or running it, find your issue [here](
 ### 2. Cloning Modules & Installing Dependencies
 Now, we'll install our modules and dependencies: 
 * (1) Open your file explorer and go to the MagicMirror folder
-* (2) Delete modules folder
+* (2) Delete `modules` folder
 * (3) Open terminal, go to the MagicMirror folder and git clone this repo.
 ```
 cd MagicMirror
 git clone https://github.com/SashkoMolodec/Meera.git
+cd modules
+git clone https://github.com/ronny3050/internet-monitor.git
 ```
 After it, we'll need to install some dependencies for our modules (be very patient and carefully, even one missed command will make you do everything again from the start):
 ```
-cd modules/MMM-Trello
+cd MMM-Trello
 npm install
 cd ..
 cd MMM-GoogleMapsTraffic
