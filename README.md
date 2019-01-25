@@ -252,7 +252,8 @@ Voice Recognition Module for MagicMirror² that works offline (**113 line**).
 		}
 },
 ```
-* First, we need to activate our microphone and speakers. Open terminal and run these command: 
+Maybe you will need to activate your microphne with speakers:
+* Open terminal and run this command: 
 ```
 sudo nano /usr/share/alsa/alsa.conf
 ```
